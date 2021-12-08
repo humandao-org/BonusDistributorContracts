@@ -8,7 +8,7 @@ on:
 
 jobs:
   run-linters:
-    name: Run linters
+    name: Run Tests
     runs-on: ubuntu-latest
 
     steps:
@@ -24,3 +24,7 @@ jobs:
         run: yarn
 
       - name: Compile contracts
+        run: yarn compile
+
+      - name: Test Contracts
+        run: yarn test
