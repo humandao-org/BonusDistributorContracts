@@ -6,27 +6,21 @@ import "@openzeppelin/hardhat-upgrades";
 
 import {HardhatUserConfig} from "hardhat/src/types/config";
 import {HardhatUserConfig as WithEtherscanConfig} from "hardhat/config";
-import {buildHardhatNetworkAccounts, getPKs} from "../utils/configInit";
+import {getPKs} from "./utils/configInit";
 
 type DeploymentConfig = HardhatUserConfig & WithEtherscanConfig;
 
 const accounts = getPKs();
-const hardhatNetworkAccounts = buildHardhatNetworkAccounts(accounts);
 
 const config: DeploymentConfig = {
     defaultNetwork: "hardhat",
     networks: {
         hardhat: {
             // accounts visible to hardhat network used by `hardhat node --fork` (yarn net <chainName>)
-            accounts: hardhatNetworkAccounts,
         },
         polygon: {
             url: "https://polygon-rpc.com/",
             chainId: 137,
-            forking: {
-                url: process.env.POLYGON_MORALIS,
-            },
-            accounts,
         },
         localhost: {
             url: "http://127.0.0.1:8545",
