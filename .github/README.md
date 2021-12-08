@@ -1,4 +1,11 @@
-# Bonus Distributor based on Merkle Proofs
+Bonus Distributor based on Merkle Proofs
+===
+
+## Installing the dependencies
+
+```sh
+yarn
+```
 
 ## Generating the merkle proofs
 
