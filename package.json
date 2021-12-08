@@ -22,6 +22,9 @@
     "abi-to-sol": "abi-to-sol"
   },
   "devDependencies": {
+    "@types/chai": "^4.2.6",
+    "commander": "^6.1.0",
+    "@types/mocha": "^5.2.7",
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-waffle": "^2.0.0",
     "@nomiclabs/hardhat-web3": "^2.0.0",
