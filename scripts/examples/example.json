@@ -1,3 +1,6 @@
 [
-  { "address": "0x097a3a6ce1d77a11bda1ac40c08fdf9f6202103f", "earnings": "0x2086ac351052600000"}
+  { "address": "0xd6216fc19db775df9774a6e33526131da7d19a2c", "earnings": "0x2086ac351052600000"},
+  { "address": "0x097a3a6ce1d77a11bda1ac40c08fdf9f6202103f", "earnings": "0x2086ac351052600000"},
+  { "address": "0x72a53cdbbcc1b9efa39c834a540550e23463aacb", "earnings": "0x2086ac351052600000"},
+  { "address": "0xd70250731a72c33bfb93016e3d1f0ca160df7e42", "earnings": "0x2086ac351052600000"}
 ]
