@@ -1,6 +1,6 @@
 #!/bin/sh
 
-curl 'https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-polygon-v2' \
+curl 'https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-v2' \
   -H 'authority: api.thegraph.com' \
   -H 'pragma: no-cache' \
   -H 'cache-control: no-cache' \
@@ -16,5 +16,5 @@ curl 'https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-polygon-v2'
   -H 'sec-fetch-dest: empty' \
   -H 'referer: https://thegraph.com/' \
   -H 'accept-language: nl-NL,nl;q=0.9,en-US;q=0.8,en;q=0.7' \
-  --data-raw '{"query":"{\n\tswaps(first: 1000, skip: 0, where: { tokenOutSym_contains: \"HDAO\"}) {\n    tokenOutSym,\n    tokenInSym,\n    tokenAmountIn,\n    tokenAmountOut,\n    userAddress {\n      id\n    }\n  }\n}\n","variables":null}' \
+  --data-raw '{"query":"{\n  swaps(first: 1000, skip: 0, where: {tokenOutSym_contains: \"HDAO\"}) {\n    tokenOutSym,\n    tokenInSym,\n    tokenAmountIn,\n    tokenAmountOut,\n    userAddress {\n      id\n    }\n  }\n}","variables":null}' \
   --compressed
