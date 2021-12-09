@@ -1,3 +1,5 @@
+import {BigNumber, ethers} from "ethers";
+
 export const parseSwaps = function (swaps: Swap[]) : string {
 
     let total = 0;
@@ -13,12 +15,13 @@ export const parseSwaps = function (swaps: Swap[]) : string {
 
     const result = Object.entries(investments).map(([key, value]) => {
         return {
-            user: key,
-            amount: value / 5,
-            investedAmount: value
+            address: key,
+            earnings: ethers.utils.parseEther(value.toString()).div(BigNumber.from(5)).toHexString(),
+            investedAmount: value,
+            bonusAmount: value / 5
         }
     }).sort((a: Investment, b: Investment) => {
-        return b.amount - a.amount;
+        return b.bonusAmount - a.bonusAmount;
     })
 
     return JSON.stringify(result);
@@ -37,7 +40,8 @@ type UserAddress = {
 }
 
 type Investment = {
-    user: string;
+    address: string;
     investedAmount: number;
-    amount: number;
+    earnings: string;
+    bonusAmount: number;
 }
