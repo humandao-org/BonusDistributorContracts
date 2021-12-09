@@ -1,0 +1,906 @@
+{
+  "data": {
+    "swaps": [
+      {
+        "tokenAmountIn": "500",
+        "tokenAmountOut": "4211.928971326530784884",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x2b7e96589d2f4e6fd6a5e1a61f174ad4b56ef89f"
+        }
+      },
+      {
+        "tokenAmountIn": "82.304761",
+        "tokenAmountOut": "510.723582886568994862",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xcf82fdd676ffebf4f5ebe344b06f76110be6942b"
+        }
+      },
+      {
+        "tokenAmountIn": "106.014192",
+        "tokenAmountOut": "825.942375462760366558",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x44ac557d99f3cae4a227f2efd2cd3a7958dbce8a"
+        }
+      },
+      {
+        "tokenAmountIn": "1023.732647",
+        "tokenAmountOut": "6071.868367616042096685",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x40cf224a5e91949bd2ba4276d046c4680c8d646c"
+        }
+      },
+      {
+        "tokenAmountIn": "155.173443",
+        "tokenAmountOut": "1046.317585265035032569",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xac8717d8e57d10ec53363c36fa3fb7869fd0ef3b"
+        }
+      },
+      {
+        "tokenAmountIn": "647.278679",
+        "tokenAmountOut": "5645.200999775799884497",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xdb774929966716f6b0b054f794db37e4b44db1ea"
+        }
+      },
+      {
+        "tokenAmountIn": "200",
+        "tokenAmountOut": "1057.846043921535010462",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xbc4bfa3119b488ce3d5516c3857fb59cf8549d5d"
+        }
+      },
+      {
+        "tokenAmountIn": "10074.550959",
+        "tokenAmountOut": "60880.582168171788053658",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x128ee5a143e067719831c2d97fc3a4b75d8be9dc"
+        }
+      },
+      {
+        "tokenAmountIn": "50",
+        "tokenAmountOut": "310.659698308006304279",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x690056bf78c7626aa948daaba4b3f3e7793278e4"
+        }
+      },
+      {
+        "tokenAmountIn": "194.152714",
+        "tokenAmountOut": "1000.162280577856825072",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xef2aadbae37adf80704e1d1432d79509362ec353"
+        }
+      },
+      {
+        "tokenAmountIn": "500",
+        "tokenAmountOut": "1586.850022642646543521",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x0b550441cd5479084120316903b09fb6a3c25904"
+        }
+      },
+      {
+        "tokenAmountIn": "50.073443",
+        "tokenAmountOut": "436.866461830345653238",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x471d053eaa3e69c3525326fe980308c57d888888"
+        }
+      },
+      {
+        "tokenAmountIn": "50",
+        "tokenAmountOut": "76.157587592437749611",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x952198e93051d8157dec65a9ee3982ff741bf4a1"
+        }
+      },
+      {
+        "tokenAmountIn": "1708.072671",
+        "tokenAmountOut": "751.932097628500446296",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x4ff21f69041edf76dd6f73fe0751468eb0eeee30"
+        }
+      },
+      {
+        "tokenAmountIn": "8.284252",
+        "tokenAmountOut": "24.058417754230041937",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xb11ba87a71ec4b60ffa315bc6efeab7cdc769ff8"
+        }
+      },
+      {
+        "tokenAmountIn": "9.932567",
+        "tokenAmountOut": "59.466040567760701303",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x15c2d6083040130b17c97d4f26f8e0cada7d50c3"
+        }
+      },
+      {
+        "tokenAmountIn": "62.410655",
+        "tokenAmountOut": "169.96736167000044422",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x8c43057372f43ca5315e27b3746376225b0768f3"
+        }
+      },
+      {
+        "tokenAmountIn": "0.019496",
+        "tokenAmountOut": "0.132829727068918297",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xa7f2b817d5783353f37f5032ef4a7f47a696b0bc"
+        }
+      },
+      {
+        "tokenAmountIn": "234",
+        "tokenAmountOut": "1427.258657384931975875",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xafed0aa32ef414060858d9824a5ed9a847b09fe5"
+        }
+      },
+      {
+        "tokenAmountIn": "200",
+        "tokenAmountOut": "86.804031656448513084",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x560390d76af48208dc50a8906a91baf7cf93b116"
+        }
+      },
+      {
+        "tokenAmountIn": "0.967686",
+        "tokenAmountOut": "5.930269149192304792",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xbbcf3985eb53c30a8eea01d9357314d61fe0e727"
+        }
+      },
+      {
+        "tokenAmountIn": "50",
+        "tokenAmountOut": "332.169976902660334733",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x690246eb52ef2ec0de74af511cd587c67237c7d0"
+        }
+      },
+      {
+        "tokenAmountIn": "98",
+        "tokenAmountOut": "586.695035364363620078",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xf7464b8d6f877d87d0fac7862d71a83ad761b045"
+        }
+      },
+      {
+        "tokenAmountIn": "1019.037628",
+        "tokenAmountOut": "6505.015952190054313652",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xbd7bb0140b954427650868009d0b0b65ff7b4480"
+        }
+      },
+      {
+        "tokenAmountIn": "1525.1",
+        "tokenAmountOut": "9998.150383088332240101",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x1e8ee48d0621289297693fc98914da2efdce1477"
+        }
+      },
+      {
+        "tokenAmountIn": "0.019625",
+        "tokenAmountOut": "0.133483405280444876",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xcd75467b3a507658c1168bfa459dbe48f9656278"
+        }
+      },
+      {
+        "tokenAmountIn": "198.739022",
+        "tokenAmountOut": "82.750240315986274396",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xf0c9df3bac5b170634f2888ea7470e6bc365d305"
+        }
+      },
+      {
+        "tokenAmountIn": "49.756782",
+        "tokenAmountOut": "305.061756859230123174",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x0bb8151693e1015f7f79aebedcadc88d7e1deb0f"
+        }
+      },
+      {
+        "tokenAmountIn": "206.451063",
+        "tokenAmountOut": "91.934238710354091862",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x2c84d8a2ffb283d295de6eb5287a2addda51b6ec"
+        }
+      },
+      {
+        "tokenAmountIn": "2",
+        "tokenAmountOut": "17.057426084538661697",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x9a33ac49d3373147da47752e20b322afbe9fe367"
+        }
+      },
+      {
+        "tokenAmountIn": "7.366061",
+        "tokenAmountOut": "58.45386645095018874",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x8888833335826e58f08ac68adb56477371fabc85"
+        }
+      },
+      {
+        "tokenAmountIn": "478.49068",
+        "tokenAmountOut": "2731.532235267481830115",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xe12d731750e222ec53b001e00d978901b134cfc9"
+        }
+      },
+      {
+        "tokenAmountIn": "455.528419",
+        "tokenAmountOut": "2522.609841569642318674",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xbb3b3ab4eee908e52904aae8efa5d9b83ca7d441"
+        }
+      },
+      {
+        "tokenAmountIn": "7.802167",
+        "tokenAmountOut": "49.116725709894904131",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xc36e21424aa9f14e5d06cb72a54573ce7fc4ea15"
+        }
+      },
+      {
+        "tokenAmountIn": "103.8633",
+        "tokenAmountOut": "100.174692911359249731",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x5a68f4bf8e67a795f4e59adea1443d712e884c70"
+        }
+      },
+      {
+        "tokenAmountIn": "213.885228",
+        "tokenAmountOut": "1269.578223919288582439",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x786b0025b36ebe6159e11f8b5ed8e609989f51ae"
+        }
+      },
+      {
+        "tokenAmountIn": "280.7",
+        "tokenAmountOut": "1680.681695093218564604",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x4a19823e4f5bbe59d14aaee3d7e4d006a4ef449f"
+        }
+      },
+      {
+        "tokenAmountIn": "3000.07314",
+        "tokenAmountOut": "7821.998303495041575024",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x63b9b9baae0c1e122f9988c14ca37f9a44dcc120"
+        }
+      },
+      {
+        "tokenAmountIn": "39.13289",
+        "tokenAmountOut": "32.900170437027800842",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xacb9422d756433adbb6c88cdbfc89a98cba02e0e"
+        }
+      },
+      {
+        "tokenAmountIn": "16",
+        "tokenAmountOut": "105.464128413423192848",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xda5b2fc5c85d691459d61d7055c5828b2317349f"
+        }
+      },
+      {
+        "tokenAmountIn": "35.25",
+        "tokenAmountOut": "96.954383937738617545",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xbe4ba856beaaa41349026e005c05fcdafc7e20ab"
+        }
+      },
+      {
+        "tokenAmountIn": "506",
+        "tokenAmountOut": "3118.669046809237236168",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x81cf5f80e6c9b9653155db40dc3176f3938f5d34"
+        }
+      },
+      {
+        "tokenAmountIn": "54.540748",
+        "tokenAmountOut": "278.816353309171843125",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xb5bd122d0abfa62b7be35d3453c670305263d6e0"
+        }
+      },
+      {
+        "tokenAmountIn": "500",
+        "tokenAmountOut": "2916.424484735645090024",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x260b46708eccb4cfe3c27584dcae6b5ec6115e7d"
+        }
+      },
+      {
+        "tokenAmountIn": "100",
+        "tokenAmountOut": "637.885530616151455449",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xff71c7f43917eeb4516c1ac66134b0d331a1ff94"
+        }
+      },
+      {
+        "tokenAmountIn": "191.400872",
+        "tokenAmountOut": "1174.099967346472957786",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xcb630c28658d8b4f0509d628d8d947e6f95ea20a"
+        }
+      },
+      {
+        "tokenAmountIn": "296.901709",
+        "tokenAmountOut": "143.985359859482157772",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x661add1f34784c14e71575765f86f9087bdd936b"
+        }
+      },
+      {
+        "tokenAmountIn": "200",
+        "tokenAmountOut": "1727.567591986456457942",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x4a9cee38c70b55e9806e7d6de9e4ccdfdb418780"
+        }
+      },
+      {
+        "tokenAmountIn": "45.671974",
+        "tokenAmountOut": "27.386376150079310759",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xc8b75cf071e7038763a82e84c7fe12c15931bcfd"
+        }
+      },
+      {
+        "tokenAmountIn": "1",
+        "tokenAmountOut": "4.37669727261693342",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x9a33ac49d3373147da47752e20b322afbe9fe367"
+        }
+      },
+      {
+        "tokenAmountIn": "100",
+        "tokenAmountOut": "703.847856737917128047",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x7e379d280ac80bf9e5d5c30578e165e6c690acc9"
+        }
+      },
+      {
+        "tokenAmountIn": "50",
+        "tokenAmountOut": "159.351754344934243666",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x7e379d280ac80bf9e5d5c30578e165e6c690acc9"
+        }
+      },
+      {
+        "tokenAmountIn": "10.955507",
+        "tokenAmountOut": "35.032603148040544063",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x165d43e0083777f986e349055bcfcd0280ff76ee"
+        }
+      },
+      {
+        "tokenAmountIn": "99.58598",
+        "tokenAmountOut": "635.689479418165950943",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x882d9f993cd7513eae16a587cce682e3e97785bb"
+        }
+      },
+      {
+        "tokenAmountIn": "23",
+        "tokenAmountOut": "143.944924965223331378",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x137ac0ecda44355a57fd9b669d0c9da667420e28"
+        }
+      },
+      {
+        "tokenAmountIn": "5.954577",
+        "tokenAmountOut": "30.74469793922812361",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xfd8fe26501a5b9df70bb1af9b52abaa7572b4c34"
+        }
+      },
+      {
+        "tokenAmountIn": "203.850705",
+        "tokenAmountOut": "1386.250106800208919069",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xefc65c49407ef7633bbb18fe45e1dae9d1104419"
+        }
+      },
+      {
+        "tokenAmountIn": "499.1",
+        "tokenAmountOut": "2962.114696660330318222",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x934831793baa281838c1e09e665a4f1406bc7560"
+        }
+      },
+      {
+        "tokenAmountIn": "4.080721",
+        "tokenAmountOut": "13.566410455560771591",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x9c0acbbdb41a6d92c24662d7a0e3c93b10aa4ca4"
+        }
+      },
+      {
+        "tokenAmountIn": "142.953573",
+        "tokenAmountOut": "548.892619774046291439",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x213a6c621c7c13815fb5930a52d903ef5b5d7848"
+        }
+      },
+      {
+        "tokenAmountIn": "200",
+        "tokenAmountOut": "1494.160872926721078814",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x428d8d0908891ec450874d058175b828eead73cc"
+        }
+      },
+      {
+        "tokenAmountIn": "33.474257",
+        "tokenAmountOut": "199.737787469182799201",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xa9ea60bb786e9f12b29bb44ba73a38418e0a365b"
+        }
+      },
+      {
+        "tokenAmountIn": "30",
+        "tokenAmountOut": "99.455564696317045769",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x3b88c55f68ac330f6d5fb229dc3a7ef5448b5e57"
+        }
+      },
+      {
+        "tokenAmountIn": "500",
+        "tokenAmountOut": "212.533225550957063536",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x2d2f5f9d4cd940380db7b41bd30a211ced244e6d"
+        }
+      },
+      {
+        "tokenAmountIn": "178.645689",
+        "tokenAmountOut": "970.355981669871643851",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x0cfa98cf025eb96490bdbf040c3e5faa063c38c8"
+        }
+      },
+      {
+        "tokenAmountIn": "364.139841",
+        "tokenAmountOut": "1240.07504132257049172",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xc2d6da192bece70070533beb47eadd755655c152"
+        }
+      },
+      {
+        "tokenAmountIn": "189.343464",
+        "tokenAmountOut": "1531.821334067622008707",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xdd6d946ea8be1f7bae1b0e22b921bd0734790277"
+        }
+      },
+      {
+        "tokenAmountIn": "1000",
+        "tokenAmountOut": "6208.130178568721416222",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xb9893dee837b4ffdce39522dc06069a94d30889e"
+        }
+      },
+      {
+        "tokenAmountIn": "4000",
+        "tokenAmountOut": "22086.858954155161386583",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x4a4f365cb9422556d995ed3ad2c446d008350355"
+        }
+      },
+      {
+        "tokenAmountIn": "2.076771",
+        "tokenAmountOut": "18.278764041312565384",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x5a68f4bf8e67a795f4e59adea1443d712e884c70"
+        }
+      },
+      {
+        "tokenAmountIn": "15.832815",
+        "tokenAmountOut": "86.025204667769551301",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xb5cfa7482e9f7dd87f8615a19204143a7393ec53"
+        }
+      },
+      {
+        "tokenAmountIn": "72.649243",
+        "tokenAmountOut": "411.955616067841273851",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xf4e262a2165527727cb51e6ecc0b103f14ac4cfc"
+        }
+      },
+      {
+        "tokenAmountIn": "200",
+        "tokenAmountOut": "1228.080695445388412369",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x54962fb1ba5229413777fbadd4d826319e68c065"
+        }
+      },
+      {
+        "tokenAmountIn": "1051.599574",
+        "tokenAmountOut": "5616.082976819698910424",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x1edde2c776e471f02e956dc84382b5d4a1f42c74"
+        }
+      },
+      {
+        "tokenAmountIn": "25",
+        "tokenAmountOut": "158.427119099396626725",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xfe56a8c3ffaee94437f21f3047a15974d489f38b"
+        }
+      },
+      {
+        "tokenAmountIn": "130.245",
+        "tokenAmountOut": "761.7977089264261491",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xbdf531237210e4e765d524103df71e6027cc2480"
+        }
+      },
+      {
+        "tokenAmountIn": "5005",
+        "tokenAmountOut": "31171.219197697204643377",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x8f4adcaafc1769c8cb34ea6b128beb777a58a6bc"
+        }
+      },
+      {
+        "tokenAmountIn": "27.889447",
+        "tokenAmountOut": "256.758645486830363621",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x861c4a05df94d545b4cb7557fdaea73a8c14f99c"
+        }
+      },
+      {
+        "tokenAmountIn": "50",
+        "tokenAmountOut": "330.460320985199479834",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xc579b72fe7986b64a84948f8a41c4bee396835b5"
+        }
+      },
+      {
+        "tokenAmountIn": "330",
+        "tokenAmountOut": "2499.456509059356062204",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x044e9bd003f8c986fbc8e11b10aba1e3c3f73475"
+        }
+      },
+      {
+        "tokenAmountIn": "50",
+        "tokenAmountOut": "292.511834428329751174",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x3b88c55f68ac330f6d5fb229dc3a7ef5448b5e57"
+        }
+      },
+      {
+        "tokenAmountIn": "500",
+        "tokenAmountOut": "212.660704072796815911",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x3bc74b98165cbb68eecec012cd54a452afbfc3b4"
+        }
+      },
+      {
+        "tokenAmountIn": "269.067593",
+        "tokenAmountOut": "1403.300035976066007036",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x9b85ba0fc6d69e3965cefc60e6eded1034856233"
+        }
+      },
+      {
+        "tokenAmountIn": "125",
+        "tokenAmountOut": "745.750531865941616317",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xbe861439e45d3163d212cf781022db6ae0b9b7b4"
+        }
+      },
+      {
+        "tokenAmountIn": "38.058153",
+        "tokenAmountOut": "178.752714927354795728",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x5fd34654fc113cf21d94997db62858e4add11d9c"
+        }
+      },
+      {
+        "tokenAmountIn": "1.151202",
+        "tokenAmountOut": "2.970566713511148194",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x4dc157c509937d410c75f59cbe55dba68fddad24"
+        }
+      },
+      {
+        "tokenAmountIn": "98.017403",
+        "tokenAmountOut": "326.42874500475759353",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x916adf069bcb2741e078a65e7187b0f5fa773405"
+        }
+      },
+      {
+        "tokenAmountIn": "194.365697",
+        "tokenAmountOut": "1175.223474150125080787",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xb01fefbf049d310cf0dc6f616117ae9a3284fb62"
+        }
+      },
+      {
+        "tokenAmountIn": "18",
+        "tokenAmountOut": "111.579922818737318309",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x5c9f460a3b6f1e422dfda33e8cc2b1928b8d7c9a"
+        }
+      },
+      {
+        "tokenAmountIn": "14.449102",
+        "tokenAmountOut": "114.999821223953605049",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x401c0f82117b3262b79a7697bf98bbd7c0d4e36c"
+        }
+      },
+      {
+        "tokenAmountIn": "0.454974",
+        "tokenAmountOut": "0.437643619274300791",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x06f398ce76acc1fce97b7cab0eb2a96ba9230c9b"
+        }
+      },
+      {
+        "tokenAmountIn": "28",
+        "tokenAmountOut": "174.356141605856180423",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xb804d0a16870e2ff870935e336733bc7fbe65beb"
+        }
+      },
+      {
+        "tokenAmountIn": "2000",
+        "tokenAmountOut": "10721.049545258758990729",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x09c81f941a7d2b611e84998e9643e18041143312"
+        }
+      },
+      {
+        "tokenAmountIn": "200",
+        "tokenAmountOut": "1571.373576149505585172",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x67488b7edd9e24ef4d22e814b4d34ac32b53363e"
+        }
+      },
+      {
+        "tokenAmountIn": "20.013596",
+        "tokenAmountOut": "110.777218673407985315",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x4dea4c40c5f9daf5ebda2a114b26767a1c4b650d"
+        }
+      },
+      {
+        "tokenAmountIn": "2702.726764",
+        "tokenAmountOut": "15846.869785066157612565",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0x17816595fcbddf02adbc39fb8c238253136b4360"
+        }
+      },
+      {
+        "tokenAmountIn": "92.618749",
+        "tokenAmountOut": "789.908991666429187266",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xa8864c6da1a37411b955cc56af43ba3f2291d1e8"
+        }
+      },
+      {
+        "tokenAmountIn": "0.022284",
+        "tokenAmountOut": "0.150750168598297523",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xb4140472b4388deae0ba61296f72d66e485547f2"
+        }
+      },
+      {
+        "tokenAmountIn": "76.614645",
+        "tokenAmountOut": "597.469315642245389641",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xe32de4bc8f94be0be3564d44f1bed3fa3a3eb0b8"
+        }
+      },
+      {
+        "tokenAmountIn": "400",
+        "tokenAmountOut": "2376.077158410393513786",
+        "tokenInSym": "USDC",
+        "tokenOutSym": "HDAO",
+        "userAddress": {
+          "id": "0xc91c423ca9163d5e842801dc40208314167cfa9b"
+        }
+      }
+    ]
+  }
+}
