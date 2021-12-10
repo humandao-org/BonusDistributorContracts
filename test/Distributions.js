@@ -6,6 +6,7 @@ describe('Distribution Contract', function () {
 
         const [owner] = await ethers.getSigners();
 
+        const ERC20 = await ethers.getContractFactory("ERC20");
 
     });
 
