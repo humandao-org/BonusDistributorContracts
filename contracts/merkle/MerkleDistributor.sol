@@ -1,7 +1,10 @@
+pragma solidity ^0.8.4;
+
 import "./IMerkleDistributor.sol";
 import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+// SPDX-License-Identifier: MIT
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
@@ -18,7 +21,7 @@ contract MerkleDistributor is IMerkleDistributor,  Pausable, Ownable {
     // This is a packed array of booleans.
     mapping(uint256 => uint256) private claimedBitMap;
 
-    constructor(address token_, bytes32 merkleRoot_) public {
+    constructor(address token_, bytes32 merkleRoot_)  {
         token = token_;
         merkleRoot = merkleRoot_;
     }
