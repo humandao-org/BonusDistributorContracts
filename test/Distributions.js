@@ -29,8 +29,44 @@ async function deployContracts() {
 
 describe('Distribution Contract', function () {
 
-    it('should be possible to verify a proof', async () => {
+    it('should not be possible to grief', async() => {
+        const {
+            erc20,
+            genesisNFT,
+            distributor,
+            merkle,
+            signers
+        } = await deployContracts();
 
+        //send hdao to the contract
+        await erc20.transfer(distributor.address, ethers.utils.parseEther('1000000'))
+
+        //take the second claim
+        let account = signers[1].address;
+        const claim = merkle.claims[account]
+
+        //make sure he has enough tokens in his wallet
+        let atleastRequiredAmount = BigNumber.from(claim.amount).mul(10);
+
+        await erc20.transfer(
+            account,
+            atleastRequiredAmount
+        );
+
+        const originalBalance =  await erc20.balanceOf(account)
+
+        await distributor.claim(
+            claim.index,
+            account,
+            claim.amount,
+            claim.proof
+        )
+
+        const addressBalance = await erc20.balanceOf(account)
+        expect(addressBalance).to.equal(BigNumber.from(claim.amount).add(originalBalance))
+    });
+
+    it('should be possible to verify a proof', async () => {
 
         const {
             erc20,
