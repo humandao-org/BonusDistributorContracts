@@ -55,15 +55,12 @@ describe('Distribution Contract', function () {
 
         const originalBalance =  await erc20.balanceOf(account)
 
-        await distributor.claim(
+        expect(distributor.claim(
             claim.index,
             account,
             claim.amount,
             claim.proof
-        )
-
-        const addressBalance = await erc20.balanceOf(account)
-        expect(addressBalance).to.equal(BigNumber.from(claim.amount).add(originalBalance))
+        )).to.be.revertedWith('the caller needs to be the user beneficiary of the bonus')
     });
 
     it('should be possible to verify a proof', async () => {
