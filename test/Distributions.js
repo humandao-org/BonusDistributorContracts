@@ -53,8 +53,6 @@ describe('Distribution Contract', function () {
             atleastRequiredAmount
         );
 
-        const originalBalance =  await erc20.balanceOf(account)
-
         expect(distributor.claim(
             claim.index,
             account,
@@ -64,7 +62,6 @@ describe('Distribution Contract', function () {
     });
 
     it('should be possible to verify a proof', async () => {
-
         const {
             erc20,
             genesisNFT,
@@ -99,6 +96,33 @@ describe('Distribution Contract', function () {
 
         const addressBalance = await erc20.balanceOf(account)
         expect(addressBalance).to.equal(BigNumber.from(claim.amount).add(originalBalance))
+    });
+
+    it('should give an NFT either way', async function () {
+        const {
+            erc20,
+            genesisNFT,
+            distributor,
+            merkle,
+            signers
+        } = await deployContracts();
+
+        //send hdao to the contract
+        await erc20.transfer(distributor.address, ethers.utils.parseEther('1000000'))
+
+        //take the first claim
+        let account = signers[0].address;
+        const claim = merkle.claims[account]
+
+        await distributor.claim(
+            claim.index,
+            account,
+            claim.amount,
+            claim.proof
+        )
+
+        expect(await genesisNFT.balanceOf(account)).to.equal(BigNumber.from(1))
+        expect(await genesisNFT.ownerOf(claim.index)).to.equal(account);
     });
 
 });
