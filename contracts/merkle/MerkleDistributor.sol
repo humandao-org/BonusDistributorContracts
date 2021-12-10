@@ -39,19 +39,19 @@ abstract contract MerkleDistributor is IMerkleDistributor,  Pausable, Ownable {
         claimedBitMap[claimedWordIndex] = claimedBitMap[claimedWordIndex] | (1 << claimedBitIndex);
     }
 
-    function claim(uint256 index, address account, uint256 amount, uint256 tokenId, bytes32[] calldata merkleProof) external override {
+    function claim(uint256 index, address account, uint256 amount, bytes32[] calldata merkleProof) external override {
 
         require(!isClaimed(index), 'MerkleDistributor: Drop already claimed.');
 
         // Verify the merkle proof.
-        bytes32 node = keccak256(abi.encodePacked(index, account, amount, tokenId));
+        bytes32 node = keccak256(abi.encodePacked(index, account, amount));
         require(MerkleProof.verify(merkleProof, merkleRoot, node), 'MerkleDistributor: Invalid proof.');
 
         // Mark it claimed and send the token.
         _setClaimed(index);
 
         uint distributionAmount = distribute(account, amount);
-        mintNft(account, tokenId);
+        mintNft(account, index);
         emit Claimed(index, account, distributionAmount);
     }
 
