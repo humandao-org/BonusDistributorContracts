@@ -125,4 +125,64 @@ describe('Distribution Contract', function () {
         expect(await genesisNFT.ownerOf(claim.index)).to.equal(account);
     });
 
+    it('should not be possible to claim twice', async() => {
+        const {
+            erc20,
+            genesisNFT,
+            distributor,
+            merkle,
+            signers
+        } = await deployContracts();
+
+        //send hdao to the contract
+        await erc20.transfer(distributor.address, ethers.utils.parseEther('1000000'))
+
+        //take the first claim
+        let account = signers[0].address;
+        const claim = merkle.claims[account]
+
+        await distributor.claim(
+            claim.index,
+            account,
+            claim.amount,
+            claim.proof
+        )
+        expect(distributor.claim(
+            claim.index,
+            account,
+            claim.amount,
+            claim.proof
+        )).to.be.revertedWith("MerkleDistributor: Drop already claimed.")
+    })
+
+    it('should be possible to claim with less, but then you receive less', async() => {
+
+    })
+
+    it('should be possible to reclaim tokens as an owner', async() => {
+        const {
+            erc20,
+            distributor,
+        } = await deployContracts();
+
+        //send hdao to the contract
+        await erc20.transfer(distributor.address, ethers.utils.parseEther('1000000'));
+
+        expect(await erc20.balanceOf(distributor.address)).to.equal(ethers.utils.parseEther('1000000'))
+
+        await distributor.transferRemainingTokens(erc20.address);
+        expect(await erc20.balanceOf(distributor.address)).to.equal(ethers.utils.parseEther('0'))
+    })
+
+    it('should be possible to transfer nft ownership back to someone else', async() => {
+        const {
+            genesisNFT,
+            distributor,
+            signers
+        } = await deployContracts();
+
+        expect(await genesisNFT.owner()).to.equal(distributor.address);
+        await distributor.transferNftOwnership(signers[0].address);
+        expect(await genesisNFT.owner()).to.equal(signers[0].address);
+    })
 });
