@@ -31,9 +31,12 @@ contract HumanDaoGenesisNFT is ERC721, Ownable {
     // Mapping from owner to operator approvals
     mapping(address => mapping(address => bool)) private _operatorApprovals;
 
+    string public metaURI 
+
 
     constructor() ERC721("Human DAO Genesis", "HDAOGEN") {
         _owner = msg.sender;
+        metaURI = = "ipfs://bafkreiebwdctshs63ldj4uhdnk73q3ck2spg4r4l6clvr7k5nlsfytalby";
     }
 
     /* function to call when minting _mintNFT
@@ -49,9 +52,17 @@ contract HumanDaoGenesisNFT is ERC721, Ownable {
     function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
         require(_exists(tokenId), "ERC721Metadata: URI query for nonexistent token");
 
-        return "ipfs://bafkreicm4nrath22vaojb7sjv6gnrmmd57njqh5n6voer43ithykjl4jh4";
+        return metaURI;
     }
 
-    
+    function updateMetaURI(string memory _metaURI) public onlyOwner() {
+        metaURI = _metaURI;
+    }
 }
+/*
+contract niftyMint is HumanDaoGenesisNFT{
 
+    function mint(address to) public {
+        _mintNFT(to);
+    }
+}*/

@@ -1,14 +1,14 @@
 {
-    "title": "HumanDAO Genesis NFT Metadata",
+    "title": "humanDAO Genesis NFT Metadata",
     "type": "object",
     "properties": {
         "name": {
             "type": "string",
-            "description": "HumanDAO Genesis NFT"
+            "description": "humanDAO Genesis Badge"
         },
         "description": {
             "type": "string",
-            "description": "An NFT awarded to participants in the HumanDAO Token Generation Event"
+            "description": "An NFT awarded to those helping bootstrap the DAO during its launch. Created by 0xDane.eth  for humanDAO"
         },
         "image": {
             "type": "string",
