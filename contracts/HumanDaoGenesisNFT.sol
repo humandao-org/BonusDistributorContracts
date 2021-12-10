@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract HumanDaoGenesisNFT is ERC721, Ownable {
 
-    string public baseUri = "https://static.defitrack.io/humandao/";
+    string public baseUri = "";
 
     constructor() ERC721('HumanDAOGenesis', 'HDAOGEN') {}
 

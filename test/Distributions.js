@@ -1,10 +1,10 @@
-const { expect } = require("chai");
+const {expect} = require("chai");
 
 const {BigNumber} = require("ethers");
 const {generateMerkleWithSigners} = require("./generate-test-merkle");
 
 async function deployContracts() {
-    const signers =  await ethers.getSigners()
+    const signers = await ethers.getSigners()
     const merkle = await generateMerkleWithSigners(signers);
 
     const ERC20 = await ethers.getContractFactory("HumanDaoERC20");
@@ -14,7 +14,7 @@ async function deployContracts() {
     const genesisNFT = await GenesisNFT.deploy();
 
     const DistributorContract = await ethers.getContractFactory("HumanDaoDistributor");
-    const distributor =  await DistributorContract.deploy(
+    const distributor = await DistributorContract.deploy(
         erc20.address,
         merkle.merkleRoot,
         genesisNFT.address
@@ -29,10 +29,32 @@ async function deployContracts() {
 
 describe('Distribution Contract', function () {
 
-    it('should not be possible to grief', async() => {
+    it('should not distribute anything if you don\'t currently hold tokens', async () => {
+        const {
+            distributor,
+            signers
+        } = await deployContracts();
+
+        //address signers[1] currently holds 0 tokens
+        expect(await distributor.calculateMaxDistribution(signers[1].address, ethers.utils.parseEther('100'))).to.equal(BigNumber.from(0));
+    });
+
+    it('should only give 20% of what people are currently holding if it is lower than the bonus', async () => {
         const {
             erc20,
-            genesisNFT,
+            distributor,
+            signers
+        } = await deployContracts();
+
+        await erc20.transfer(signers[1].address, ethers.utils.parseEther('100'))
+        //address signers[1] currently holds 100 tokens, but has the right to claim 100, so he actually sold 400 tokens.
+        //give him only 20 tokens -> 20% of 100
+        expect(await distributor.calculateMaxDistribution(signers[1].address, ethers.utils.parseEther('100'))).to.equal(ethers.utils.parseEther('20'));
+    });
+
+    it('should not be possible to grief', async () => {
+        const {
+            erc20,
             distributor,
             merkle,
             signers
@@ -85,7 +107,7 @@ describe('Distribution Contract', function () {
             atleastRequiredAmount
         );
 
-        const originalBalance =  await erc20.balanceOf(account)
+        const originalBalance = await erc20.balanceOf(account)
 
         await distributor.claim(
             claim.index,
@@ -125,7 +147,7 @@ describe('Distribution Contract', function () {
         expect(await genesisNFT.ownerOf(claim.index)).to.equal(account);
     });
 
-    it('should not be possible to claim twice', async() => {
+    it('should not be possible to claim twice', async () => {
         const {
             erc20,
             genesisNFT,
@@ -155,11 +177,7 @@ describe('Distribution Contract', function () {
         )).to.be.revertedWith("MerkleDistributor: Drop already claimed.")
     })
 
-    it('should be possible to claim with less, but then you receive less', async() => {
-
-    })
-
-    it('should be possible to reclaim tokens as an owner', async() => {
+    it('should be possible to reclaim tokens as an owner', async () => {
         const {
             erc20,
             distributor,
@@ -174,7 +192,7 @@ describe('Distribution Contract', function () {
         expect(await erc20.balanceOf(distributor.address)).to.equal(ethers.utils.parseEther('0'))
     })
 
-    it('should be possible to transfer nft ownership back to someone else', async() => {
+    it('should be possible to transfer nft ownership back to someone else', async () => {
         const {
             genesisNFT,
             distributor,
@@ -184,5 +202,7 @@ describe('Distribution Contract', function () {
         expect(await genesisNFT.owner()).to.equal(distributor.address);
         await distributor.transferNftOwnership(signers[0].address);
         expect(await genesisNFT.owner()).to.equal(signers[0].address);
-    })
+    });
+
+
 });
