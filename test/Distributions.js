@@ -205,7 +205,15 @@ describe('Distribution Contract', function () {
     });
 
     it('should be possible to transfer ownership', async() => {
+        const {
+            distributor,
+            signers
+        } = await deployContracts();
 
+        let newOwner = signers[1].address;
+
+        await distributor.transferOwnership(newOwner);
+        expect(await distributor.owner()).to.equal(newOwner);
     });
 
     it('should not work if paused', async() => {
