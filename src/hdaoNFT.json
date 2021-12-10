@@ -1,0 +1,18 @@
+{
+    "title": "HumanDAO Genesis NFT Metadata",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "HumanDAO Genesis NFT"
+        },
+        "description": {
+            "type": "string",
+            "description": "An NFT awarded to participants in the HumanDAO Token Generation Event"
+        },
+        "image": {
+            "type": "string",
+            "description": "https://bafybeib7iag6aifh2tuoiq3d2wpny5c42srbgvumsuepeaclmyxmnqxvna.ipfs.dweb.link/"
+        }
+    }
+}
