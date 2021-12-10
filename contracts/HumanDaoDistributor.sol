@@ -47,4 +47,12 @@ contract HumanDaoDistributor is MerkleDistributor {
             return bonusOnCurrentBalance;
         }
     }
+
+    function pause() external onlyOwner {
+        _pause();
+    }
+
+    function unpause() external onlyOwner {
+        _unpause();
+    }
 }

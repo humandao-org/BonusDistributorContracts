@@ -204,5 +204,29 @@ describe('Distribution Contract', function () {
         expect(await genesisNFT.owner()).to.equal(signers[0].address);
     });
 
+    it('should be possible to transfer ownership', async() => {
 
+    });
+
+    it('should not work if paused', async() => {
+        const {
+            distributor,
+            merkle,
+            signers
+        } = await deployContracts();
+
+        await distributor.pause();
+
+
+        //take the first claim
+        let account = signers[0].address;
+        const claim = merkle.claims[account]
+
+        expect(distributor.claim(
+            claim.index,
+            account,
+            claim.amount,
+            claim.proof
+        )).to.be.revertedWith("Pausable: paused")
+    });
 });
