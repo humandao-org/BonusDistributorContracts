@@ -2,6 +2,7 @@
   "name": "humandao-bonus-distributor-contracts",
   "version": "0.0.1",
   "private": false,
+  "license": "MIT",
   "dependencies": {
     "@chainlink/contracts": "^0.2.1",
     "@nomiclabs/hardhat-etherscan": "^2.1.4",
