@@ -1,0 +1,18 @@
+{
+  "title": "humanDAO Genesis Badge", 
+  "name": "humanDAO Genesis Badge", 
+  "type": "object", 
+  "imageUrl": "ipfs://QmWGnNY82bz2NUvfHnQtUq3wqcNxGjcAPW9ic6TvBD5cS2", 
+  "description": "Awarded to those helping bootstrap the humanDAO during its launch. The name humanDAO is a nod to the Human Fund from the TV show Seinfeld. We agree with George Costanza, there should be a Human Fund, this is our attempt.", 
+  "attributes": 
+    [{
+      "trait_type": "Creator", 
+      "value": "0xDane.eth"
+    }], 
+  "properties": 
+    {
+      "name": {"type": "string", "description": "humanDAO Genesis Badge"}, 
+      "description": {"type": "string", "description": "Awarded to those helping bootstrap the humanDAO during its launch. The name humanDAO is a nod to the Human Fund from the TV show Seinfeld. We agree with George Costanza, there should be a Human Fund, this is our attempt."}, 
+      "preview_media_file": {"type": "gif", "description": "ipfs://QmWGnNY82bz2NUvfHnQtUq3wqcNxGjcAPW9ic6TvBD5cS2"}
+    }
+}
