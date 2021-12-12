@@ -21,7 +21,7 @@ contract HumanDaoGenesisNFT is ERC721URIStorage, Ownable  {
 
     constructor() ERC721('HumanDAOGenesis', 'HDAOGEN') {}
 
-    function mint(address beneficiary, uint tokenId) external onlyOwner {
+    function mint(address beneficiary, uint256 tokenId) external onlyOwner {
         _mint(beneficiary, tokenId);
         _setTokenURI(tokenId, _tokenURI);
         _totalSupply += 1;
