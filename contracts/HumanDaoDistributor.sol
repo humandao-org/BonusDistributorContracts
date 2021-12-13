@@ -20,9 +20,8 @@ contract HumanDaoDistributor is MerkleDistributor {
         return distributionAmount;
     }
 
-    function mintNft(address account_, uint256 tokenId_) internal override  returns (uint256) {
-        humanDAONFT.mint(account_, tokenId_);
-        return tokenId_;
+    function mintNft(address account_) internal {
+        humanDAONFT._mintNFT(account_);
     }
 
     function transferRemainingTokens(address _token) external onlyOwner {
