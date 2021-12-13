@@ -59,9 +59,7 @@ contract HumanDaoGenesisNFT is ERC721, Ownable {
         metaURI = _metaURI;
     }
     
-    function mint(address to) public {
-        _mintNFT(to);
-    }
+    
 }
 
 
