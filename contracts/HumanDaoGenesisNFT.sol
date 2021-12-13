@@ -13,12 +13,6 @@ contract HumanDaoGenesisNFT is ERC721, Ownable {
 
     using Address for address;
 
-    // Token name
-    string private _name;
-
-    // Token symbol
-    string private _symbol;
-
     // Mapping from token ID to owner address
     mapping(uint256 => address) private _owners;
 
