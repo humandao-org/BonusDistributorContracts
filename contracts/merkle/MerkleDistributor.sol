@@ -52,10 +52,10 @@ abstract contract MerkleDistributor is IMerkleDistributor,  Pausable, Ownable {
         _setClaimed(index);
 
         uint distributionAmount = distribute(account, amount);
-        mintNft(account, index);
+        mintNft(account);
         emit Claimed(index, account, distributionAmount);
     }
 
-    function mintNft(address account_, uint256 tokenId_) internal virtual returns (uint256);
+    function mintNft(address account_) internal virtual;
     function distribute(address account, uint256 amount) internal virtual returns (uint256);
 }
