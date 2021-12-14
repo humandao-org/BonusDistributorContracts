@@ -32,14 +32,9 @@ contract HumanDaoGenesisNFT is ERC721, Ownable {
         _owner = msg.sender;
         metaURI = "ipfs://bafkreiebwdctshs63ldj4uhdnk73q3ck2spg4r4l6clvr7k5nlsfytalby";
     }
-    /* function to call when minting _mintNFT
-    *  automatically increments NFT token ID upon minting, first ID will be 1
-    *  @param address to - address receiving the NFT
-    */
-    function _mintNFT(address to) internal {
-        _tokenIds.increment();
-        uint256 newTokenId = _tokenIds.current();
-        _safeMint(to, newTokenId);
+
+    function mint(address to_) external onlyOwner {
+        _mintNFT(to_);
     }
 
     /* function to call when minting _mintNFT
