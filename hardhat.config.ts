@@ -23,6 +23,12 @@ const config: DeploymentConfig = {
             chainId: 137,
             accounts: getPKs()
         },
+        mumbai: {
+            url: "https://rpc-mumbai.maticvigil.com",
+            chainId: 80001,
+            accounts: getPKs(),
+            gasPrice: 60000000000
+        },
         localhost: {
             url: "http://127.0.0.1:8545",
             timeout: 300000,

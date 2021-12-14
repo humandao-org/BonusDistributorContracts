@@ -150,7 +150,6 @@ describe('Distribution Contract', function () {
     it('should not be possible to claim twice', async () => {
         const {
             erc20,
-            genesisNFT,
             distributor,
             merkle,
             signers
