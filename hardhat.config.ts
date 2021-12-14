@@ -21,6 +21,7 @@ const config: DeploymentConfig = {
         polygon: {
             url: "https://polygon-rpc.com/",
             chainId: 137,
+            accounts: getPKs()
         },
         localhost: {
             url: "http://127.0.0.1:8545",
