@@ -17,7 +17,7 @@ describe("NFT Contract", function () {
             nft, signers
         } = await deploy();
 
-        await nft.mint(signers[0].address, 0);
+        await nft.mint(signers[0].address);
 
     });
 
@@ -26,12 +26,12 @@ describe("NFT Contract", function () {
             nft, signers
         } = await deploy();
 
-        await nft.mint(signers[0].address, 0);
+        await nft.mint(signers[0].address);
 
-        expect(await nft.tokenURI(0)).to.equal('');
+        expect(await nft.tokenURI(1)).to.equal('ipfs://bafkreiebwdctshs63ldj4uhdnk73q3ck2spg4r4l6clvr7k5nlsfytalby');
 
-        const baseURI = 'https://static.defitrack.io/humandao/';
-        await nft.setBaseURI(baseURI);
-        expect(await nft.tokenURI(0)).to.equal(baseURI + '0');
+        const metaURI = 'https://static.defitrack.io/humandao/';
+        await nft.updateMetaURI(metaURI);
+        expect(await nft.tokenURI(1)).to.equal(metaURI);
     });
 });

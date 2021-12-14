@@ -144,7 +144,7 @@ describe('Distribution Contract', function () {
         )
 
         expect(await genesisNFT.balanceOf(account)).to.equal(BigNumber.from(1))
-        expect(await genesisNFT.ownerOf(claim.index)).to.equal(account);
+        expect(await genesisNFT.ownerOf(1)).to.equal(account);
     });
 
     it('should not be possible to claim twice', async () => {
