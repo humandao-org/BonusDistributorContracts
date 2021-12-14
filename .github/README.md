@@ -1,6 +1,8 @@
 Bonus Distributor based on Merkle Proofs
 ===
 
+[![CircleCI](https://circleci.com/gh/humandao-org/BonusDistributorContracts/tree/master.svg?style=svg)](https://circleci.com/gh/humandao-org/BonusDistributorContracts/tree/master)
+
 ## Installing the dependencies
 
 ```sh
