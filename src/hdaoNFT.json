@@ -1,0 +1,18 @@
+{
+    "title": "humanDAO Genesis NFT Metadata",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "humanDAO Genesis Badge"
+        },
+        "description": {
+            "type": "string",
+            "description": "An NFT awarded to those helping bootstrap the DAO during its launch. Created by 0xDane.eth  for humanDAO"
+        },
+        "image": {
+            "type": "string",
+            "description": "https://bafybeib7iag6aifh2tuoiq3d2wpny5c42srbgvumsuepeaclmyxmnqxvna.ipfs.dweb.link/"
+        }
+    }
+}
