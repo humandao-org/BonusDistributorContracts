@@ -28,7 +28,7 @@ describe("NFT Contract", function () {
 
         await nft.mint(signers[0].address);
 
-        expect(await nft.tokenURI(1)).to.equal('ipfs://bafkreiebwdctshs63ldj4uhdnk73q3ck2spg4r4l6clvr7k5nlsfytalby');
+        expect(await nft.tokenURI(1)).to.equal("ipfs://QmSg4aZRUwCVNRk59Jj9cFsfUThyiCArjszjeaCj4SSfiK");
 
         const metaURI = 'https://static.defitrack.io/humandao/';
         await nft.updateMetaURI(metaURI);
