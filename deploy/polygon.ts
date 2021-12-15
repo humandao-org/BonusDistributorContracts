@@ -3,6 +3,8 @@ import hardhat, {ethers} from "hardhat";
 
 async function main() {
 
+    await hardhat.run("compile:compile");
+
     const humandaoAddress = "0x72928d5436ff65e57f72d5566dcd3baedc649a88"
 
     console.log('deploying genesis NFT');

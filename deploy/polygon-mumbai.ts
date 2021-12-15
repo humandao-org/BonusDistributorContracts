@@ -3,6 +3,8 @@ import {parseBalanceMap} from "../src/parse-balance-map";
 
 async function main() {
 
+    await hardhat.run("compile:compile");
+
     console.log('generating merkle');
     const merkle = await generateMerkleWithAccounts([
         "0x715Beae184768766C65D8Ed4AA6D1f6893efb542",
