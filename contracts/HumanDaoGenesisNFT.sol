@@ -30,7 +30,7 @@ contract HumanDaoGenesisNFT is ERC721, Ownable {
 
     constructor() ERC721("Human DAO Genesis", "HDAOGEN") {
         _owner = msg.sender;
-        metaURI = "ipfs://bafkreiebwdctshs63ldj4uhdnk73q3ck2spg4r4l6clvr7k5nlsfytalby";
+        metaURI = "ipfs://QmSg4aZRUwCVNRk59Jj9cFsfUThyiCArjszjeaCj4SSfiK";
     }
 
     function mint(address to_) external onlyOwner {
