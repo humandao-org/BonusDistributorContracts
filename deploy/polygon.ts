@@ -3,13 +3,16 @@ import hardhat, {ethers} from "hardhat";
 
 async function main() {
 
-    await hardhat.run("compile:compile");
+    await hardhat.run("compile");
 
     const humandaoAddress = "0x72928d5436ff65e57f72d5566dcd3baedc649a88"
 
     console.log('deploying genesis NFT');
     const GenesisNFT = await ethers.getContractFactory("HumanDaoGenesisNFT")
     const genesisNFT = await GenesisNFT.deploy();
+
+    await genesisNFT.deployed();
+
 
     const DistributorContract = await ethers.getContractFactory("HumanDaoDistributor");
 
@@ -26,6 +29,11 @@ async function main() {
 
     console.log('nft: ', genesisNFT.address);
     console.log('distributor: ', distributor.address);
+
+    await distributor.deployed();
+
+    await genesisNFT.transferOwnership(distributor.address);
+
 
     await hardhat.run("verify:verify", {
         address: genesisNFT.address,
